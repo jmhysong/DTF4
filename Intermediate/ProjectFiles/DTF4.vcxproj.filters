@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\DTF4.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{81319233-C08B-4E52-B62D-0F89440C8713}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DTF4.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\DTF4Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{311E6282-1DE4-4D19-A35B-0867BE69604E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\DTF4">
+      <UniqueIdentifier>{1B16926E-0728-4FAA-83A3-70CBD1EA3424}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DTF4\DTF4.Build.cs">
+      <Filter>Source\DTF4</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\DTF4\DTF4.cpp">
+      <Filter>Source\DTF4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DTF4\DTF4.h">
+      <Filter>Source\DTF4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DTF4\DTF4GameMode.cpp">
+      <Filter>Source\DTF4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DTF4\DTF4GameMode.h">
+      <Filter>Source\DTF4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\DTF4\DTF4HUD.h">
+      <Filter>Source\DTF4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\DTF4\DTF4HUD.cpp">
+      <Filter>Source\DTF4</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
