@@ -30,6 +30,9 @@ public:
 		TSubclassOf<class UUserWidget>MJoinGameClass;
 	UPROPERTY()
 		UUserWidget* MJoinGame;
-	
+	UPROPERTY()
+		TSubclassOf<class UUserWidget>MHostGameClass;
+	UPROPERTY()
+		UUserWidget* MHostGame;
 	
 };

@@ -23,6 +23,12 @@ ADTF4HUD::ADTF4HUD(const FObjectInitializer& ObjectInitializer) : Super(ObjectIn
 	{
 		MJoinGameClass = MJoinGameBP.Class;
 	}
+
+	static ConstructorHelpers::FClassFinder<UUserWidget>MHostGameBP(TEXT("WidgetBlueprint'/Game/Widgets/HostMenuWidget.HostMenuWidget_C'"));
+	if (MHostGameBP.Class)
+	{
+		MHostGameClass = MHostGameBP.Class;
+	}
 }
 
 void ADTF4HUD::BeginPlay()
@@ -57,4 +63,13 @@ void ADTF4HUD::BeginPlay()
 		MJoinGame = CreateWidget<UUserWidget>(GetWorld(), MJoinGameClass);
 	}
 	MJoinGame->AddToViewport();
+	if (!MHostGameClass)
+	{
+		return;
+	}
+	if (!MHostGame)
+	{
+		MHostGame = CreateWidget<UUserWidget>(GetWorld(), MHostGameClass);
+	}
+	MHostGame->AddToViewport();
 }
